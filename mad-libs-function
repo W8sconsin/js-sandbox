@@ -1,0 +1,12 @@
+// function that assembles a sentence madlibs style
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+  var result = "";
+
+  result = "It was really " + myAdjective + " when the " + myNoun + " " + myVerb + " " + myAdverb + ".";
+  
+  return result;
+}
+
+// Test call
+wordBlanks("dog", "big", "ran", "quickly");
