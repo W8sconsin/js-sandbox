@@ -1,0 +1,22 @@
+var myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [ 
+      "CS", 
+      "8T", 
+      "LP" ],
+    "gold": true
+  },
+  {
+    "artist": "Indigo Girls",
+    "title": "Swampophelia",
+    "release_year": 1994,
+    "formats": [
+      "CS",
+      "8T",
+      "LP" ],
+    "gold": true
+  }
+];
