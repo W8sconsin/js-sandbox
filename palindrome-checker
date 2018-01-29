@@ -1,0 +1,10 @@
+function palindrome(str) {
+  // Good luck!
+  str = str.replace(/[\W_]+/g," ").replace(/\s/g, '').toLowerCase();
+  var strReversed = str.split("").reverse().join("");
+  return strReversed === str;
+}
+
+
+
+palindrome("ey eI--");
