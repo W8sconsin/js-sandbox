@@ -1,0 +1,10 @@
+
+function confirmEnding(str, target) {
+
+  var start = str.length - target.length;
+  var long = target.length;
+
+  return str.substr(start, long) === target;
+}
+
+confirmEnding("He has to give me a new name", "name");
