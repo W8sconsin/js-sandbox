@@ -1,0 +1,17 @@
+
+function chunkArrayInGroups(arr, size) {
+  // Not functional yet.  In progress.
+  
+  var iterations = arr.length / size;
+  var currentIndex = 0;
+  var arrOfChunks = [];
+  for(var i = 0; i < iterations; i++){
+    arrOfChunks.push(arr.slice(currentIndex, size));
+    currentIndex += size;
+    size += size;
+  }
+  
+  return arrOfChunks;
+}
+
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2);
