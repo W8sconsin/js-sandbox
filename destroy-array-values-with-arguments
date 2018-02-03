@@ -1,0 +1,29 @@
+
+function destroyer(arr) { 
+/* deletes array values within array
+   calls bouncer function to clean up array
+   once done, array is returned minus the arguments to delete
+*/
+
+  for(var i = 0; i < arr.length; i++){
+    for(var j = 0; j < arguments.length; j++){
+      if (arr[i] === arguments[j]){
+        delete arr[i];
+      }
+    }
+  }
+  
+  arr = bouncer(arr);
+  
+  return arr;
+}
+
+function bouncer(arr) { // filters out falsy values from array
+
+  return arr.filter( function( value ){
+    return value;
+  });
+  
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
