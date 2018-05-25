@@ -1,0 +1,15 @@
+function dropElements(arr, func) {
+
+  var times = arr.length; // needed because each iteration alters the arr length
+  for (var i = 0; i < times; i++) {
+    if (func(arr[0])) { // at each iteration, we're working with the first array element
+      break; // break when the function's condition is true for array's first element
+    } else {
+      arr.shift(); // shifts the array's first element when the array's first element is not equal to the function's returned value using the array's first element
+    }
+  }
+  return arr;
+
+}
+
+dropElements([1, 2, 3, 4], function(n) {return n >= 3;});
